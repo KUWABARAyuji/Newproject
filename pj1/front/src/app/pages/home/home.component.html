@@ -1,0 +1,141 @@
+
+<!-- Header -->
+<header class="header">
+	<div class="logo">EcoStore</div>
+	<nav>
+		<a routerLink="/home">Home</a>
+		<a routerLink="/produtos">Produtos</a>
+		<a routerLink="/sobre">Sobre</a>
+		<a routerLink="/blog">Blog</a>
+		<a routerLink="/contato">Contato</a>
+	</nav>
+		<div class="header-actions">
+			<button class="toggle-mode" (click)="toggleDarkMode()" [attr.aria-label]="isDarkMode ? 'Ativar modo claro' : 'Ativar modo escuro'">
+				<span *ngIf="!isDarkMode">🌙</span>
+				<span *ngIf="isDarkMode">☀️</span>
+			</button>
+			<button class="btn-secondary" routerLink="/login">Login</button>
+			<button class="btn-primary" routerLink="/cadastro">Cadastrar</button>
+			<button class="cart-btn" aria-label="Carrinho"><span>🛒</span></button>
+		</div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+	<div class="hero-content">
+		<h1>Consuma com Consciência</h1>
+		<p>Produtos ecológicos, entrega sustentável e impacto positivo no planeta.</p>
+		<a href="#produtos" class="btn-primary">Ver Produtos</a>
+		<a href="#sobre" class="btn-secondary">Saiba Mais</a>
+	</div>
+	<img src="assets/hero-eco.jpg" alt="Natureza e produtos sustentáveis" class="hero-img" />
+</section>
+
+<!-- Destaques de Produtos -->
+<section class="destaques" id="produtos">
+	<h2>Destaques</h2>
+	<div class="produtos-grid">
+		<div class="produto-card" *ngFor="let produto of [1,2,3,4]">
+			<img src="assets/produto.jpg" alt="Produto Sustentável" />
+			<h3>Produto Sustentável</h3>
+			<p>Descrição breve do produto ecológico.</p>
+			<button class="btn-primary">Comprar</button>
+		</div>
+	</div>
+</section>
+
+<!-- Benefícios Chave -->
+<section class="beneficios">
+	<h2>Por que escolher a EcoStore?</h2>
+	<div class="beneficios-grid">
+		<div class="beneficio">
+			<span class="icon">🌱</span>
+			<h4>Produtos 100% Sustentáveis</h4>
+			<p>Selecionados para causar o menor impacto ambiental.</p>
+		</div>
+		<div class="beneficio">
+			<span class="icon">🚚</span>
+			<h4>Entrega Verde</h4>
+			<p>Logística com emissão de carbono compensada.</p>
+		</div>
+		<div class="beneficio">
+			<span class="icon">♻️</span>
+			<h4>Embalagem Ecológica</h4>
+			<p>Sem plásticos descartáveis, apenas materiais recicláveis.</p>
+		</div>
+		<div class="beneficio">
+			<span class="icon">💚</span>
+			<h4>Compromisso Social</h4>
+			<p>Parcerias com ONGs e projetos ambientais.</p>
+		</div>
+	</div>
+</section>
+
+<!-- Testemunhos -->
+<section class="testemunhos">
+	<h2>O que nossos clientes dizem</h2>
+	<div class="testemunhos-grid">
+		<div class="testemunho">
+			<img src="assets/cliente1.jpg" alt="Cliente feliz" />
+			<blockquote>"A EcoStore mudou minha forma de consumir! Produtos incríveis e entrega rápida."</blockquote>
+			<span class="nome">Ana Paula</span>
+		</div>
+		<div class="testemunho">
+			<img src="assets/cliente2.jpg" alt="Cliente feliz" />
+			<blockquote>"Adorei a preocupação com o meio ambiente em cada detalhe."</blockquote>
+			<span class="nome">Carlos Silva</span>
+		</div>
+	</div>
+</section>
+
+<!-- Blog/Notícias Recentes -->
+<section class="blog">
+	<h2>Blog & Notícias</h2>
+	<div class="blog-grid">
+		<div class="blog-card" *ngFor="let post of [1,2,3]">
+			<img src="assets/blog.jpg" alt="Notícia Sustentável" />
+			<h4>Título do Post</h4>
+			<p>Resumo do post ou notícia sobre sustentabilidade.</p>
+			<a href="#" class="btn-link">Leia mais</a>
+		</div>
+	</div>
+</section>
+
+<!-- Parcerias -->
+<section class="parcerias">
+	<h2>Nossos Parceiros</h2>
+	<div class="parcerias-logos">
+		<img src="assets/parceiro1.png" alt="Parceiro 1" />
+		<img src="assets/parceiro2.png" alt="Parceiro 2" />
+		<img src="assets/parceiro3.png" alt="Parceiro 3" />
+		<img src="assets/parceiro4.png" alt="Parceiro 4" />
+	</div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+	<h2>Receba novidades e ofertas</h2>
+	<form class="newsletter-form">
+		<input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required />
+		<button type="submit" class="btn-primary">Assinar</button>
+	</form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer-links">
+		<a href="#">Política de Privacidade</a>
+		<a href="#">Termos de Uso</a>
+		<a href="#">Contato</a>
+		<a href="#">Mapa do Site</a>
+	</div>
+	<div class="footer-social">
+		<a href="#" aria-label="Instagram">📸</a>
+		<a href="#" aria-label="Facebook">📘</a>
+		<a href="#" aria-label="WhatsApp">💬</a>
+	</div>
+	<div class="footer-contact">
+		<span>contato@ecostore.com</span> | <span>(11) 99999-9999</span>
+	</div>
+	<div class="footer-copy">© 2025 EcoStore. Todos os direitos reservados.</div>
+</footer>

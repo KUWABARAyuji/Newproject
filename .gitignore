@@ -1,0 +1,61 @@
+# =========================
+# ASP.NET Core / .NET
+# =========================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+.vscode/
+project.lock.json
+artifacts/
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio
+*.dbmdl
+*.bak
+*.backup
+*.log
+*.pdb
+*.cache
+*.dll
+*.exe
+*.tmp
+*.swp
+*.userprefs
+*.aps
+*.ncb
+*.res
+*.tlb
+*.tlh
+*.idb
+*.tlog
+
+# =========================
+# Angular / Frontend
+# =========================
+node_modules/
+dist/
+tmp/
+coverage/
+*.log
+*.env
+*.env.local
+.angular/cache/
+.angular/
+.idea/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Others
+# =========================
+*.lock
+package-lock.json
+yarn-error.log
+.env.development.local
+.env.test.local
+.env.production.local

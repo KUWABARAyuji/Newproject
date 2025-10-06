@@ -1,0 +1,44 @@
+<!-- Header -->
+<header class="header">
+	<div class="logo">EcoStore</div>
+	<nav>
+		<a routerLink="/home">Home</a>
+		<a routerLink="/produtos">Produtos</a>
+		<a routerLink="/sobre">Sobre</a>
+		<a routerLink="/blog">Blog</a>
+		<a routerLink="/contato">Contato</a>
+	</nav>
+	<div class="header-actions">
+		<!-- O toggle de dark mode só aparece na home -->
+		<ng-container *ngIf="isHomePage">
+			<button class="toggle-mode" (click)="toggleDarkMode()" [attr.aria-label]="isDarkMode ? 'Ativar modo claro' : 'Ativar modo escuro'">
+				<span *ngIf="!isDarkMode">🌙</span>
+				<span *ngIf="isDarkMode">☀️</span>
+			</button>
+		</ng-container>
+		<button class="btn-secondary" routerLink="/login">Login</button>
+		<button class="btn-primary" routerLink="/cadastro">Cadastrar</button>
+		<button class="cart-btn" aria-label="Carrinho"><span>🛒</span></button>
+	</div>
+</header>
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="footer">
+	<div class="footer-links">
+		<a href="#">Política de Privacidade</a>
+		<a href="#">Termos de Uso</a>
+		<a href="#">Contato</a>
+		<a href="#">Mapa do Site</a>
+	</div>
+	<div class="footer-social">
+		<a href="#" aria-label="Instagram">📸</a>
+		<a href="#" aria-label="Facebook">📘</a>
+		<a href="#" aria-label="WhatsApp">💬</a>
+	</div>
+	<div class="footer-contact">
+		<span>contato@ecostore.com</span> | <span>(11) 99999-9999</span>
+	</div>
+	<div class="footer-copy">© 2025 EcoStore. Todos os direitos reservados.</div>
+</footer>

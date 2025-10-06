@@ -1,0 +1,216 @@
+
+.cadastro-container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(120deg, #1976d2 0%, #42a5f5 100%) !important;
+}
+
+.cadastro-form {
+	background: #fff !important;
+	padding: 2.5rem 2rem 2rem 2rem;
+	border-radius: 18px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+	width: 100%;
+	max-width: 370px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.cadastro-form h2 {
+	text-align: center;
+	color: #1976d2 !important;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.form-group label {
+	font-size: 1rem;
+	color: #333 !important;
+	font-weight: 500;
+}
+
+.form-group input {
+	padding: 0.7rem 1rem;
+	border: 1px solid #bdbdbd;
+	border-radius: 8px;
+	font-size: 1rem;
+	outline: none;
+	transition: border 0.2s;
+}
+
+.form-group input:focus {
+	border: 1.5px solid #1976d2;
+}
+
+.btn-cadastro {
+	background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%) !important;
+	color: #fff !important;
+	border: none;
+	border-radius: 8px;
+	padding: 0.9rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	cursor: pointer;
+	margin-top: 0.5rem;
+	transition: background 0.2s, box-shadow 0.2s;
+	box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+.btn-cadastro:hover {
+	background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%) !important;
+}
+
+.login-link {
+	text-align: center;
+	margin-top: 1rem;
+	color: #666;
+	font-size: 0.98rem;
+}
+
+.login-link a {
+	color: #1976d2 !important;
+	text-decoration: underline;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+.login-link a:hover {
+	color: #0d47a1 !important;
+}
+
+.cadastro-form {
+	background: #fff;
+	padding: 2.5rem 2rem 2rem 2rem;
+	border-radius: 18px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+	width: 100%;
+	max-width: 370px;
+	.cadastro-container {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--color-bg);
+	}
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+.cadastro-form h2 {
+	text-align: center;
+	color: #1976d2;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+	.cadastro-form {
+		background: var(--color-bg);
+		padding: 2.5rem 2rem 2rem 2rem;
+		border-radius: 18px;
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+		width: 100%;
+		max-width: 370px;
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+	}
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.form-group label {
+	.cadastro-form h2 {
+		text-align: center;
+		color: var(--color-primary);
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+	}
+	color: #333;
+	font-weight: 500;
+}
+
+.form-group input {
+	padding: 0.7rem 1rem;
+	border: 1px solid #bdbdbd;
+	border-radius: 8px;
+	font-size: 1rem;
+	outline: none;
+	.form-group label {
+		font-size: 1rem;
+		color: var(--color-text);
+		font-weight: 500;
+	}
+}
+
+.form-group input:focus {
+	border: 1.5px solid #1976d2;
+}
+
+.btn-cadastro {
+	background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 0.9rem;
+	font-size: 1.1rem;
+	.btn-cadastro {
+		background: var(--color-primary);
+		color: var(--color-text);
+		border: none;
+		border-radius: 8px;
+		padding: 0.9rem;
+		font-size: 1.1rem;
+		font-weight: 600;
+		cursor: pointer;
+		margin-top: 0.5rem;
+		transition: background 0.2s, box-shadow 0.2s;
+		box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+	}
+.btn-cadastro:hover {
+	background: var(--color-accent);
+	color: var(--color-bg);
+}
+	cursor: pointer;
+	margin-top: 0.5rem;
+	transition: background 0.2s, box-shadow 0.2s;
+	box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+.btn-cadastro:hover {
+	background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+}
+
+.login-link {
+	text-align: center;
+	.login-link a {
+		color: var(--color-primary);
+		text-decoration: underline;
+		font-weight: 500;
+		transition: color 0.2s;
+	}
+.login-link a:hover {
+	color: var(--color-accent);
+}
+
+.login-link a {
+	color: #1976d2;
+	text-decoration: underline;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+.login-link a:hover {
+	color: #0d47a1;
+}
+}

@@ -1,0 +1,27 @@
+
+:root {
+	--color-bg: #F7F9F8;
+	--color-primary: #388E3C;
+	--color-accent: #FFD600;
+	--color-text: #222;
+	--color-secondary: #666;
+	--radius: 12px;
+}
+body {
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-family: 'Inter', 'Roboto', 'Open Sans', sans-serif;
+}
+
+/* DARK MODE */
+.dark-mode {
+	--color-bg: #181A1B;
+	--color-primary: #81C784;
+	--color-accent: #FFD600;
+	--color-text: #F7F9F8;
+	--color-secondary: #BDBDBD;
+}
+.dark-mode body {
+	background: var(--color-bg);
+	color: var(--color-text);
+}
